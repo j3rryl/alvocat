@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'handlee':['Handlee', "cursive"]
+        'handlee':['Handlee', "cursive"],
+        'playball':['Playball', "cursive"],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

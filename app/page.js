@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>    
     <ResponsiveAppBar/>
-    <h1 className=" text-center my-2" style={{
+    <h1 className=" text-center my-2 !font-playball" style={{
       letterSpacing:"1rem",
       fontWeight:"bolder",
       fontSize:25
@@ -32,7 +32,7 @@ export default function Home() {
       background:"white",
       fontSize:14
     }} className="font-handlee p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <h4>About Us</h4>
+    <h4 className="text-lg">About Us</h4>
     <p>
     We are an agricultural company Incorporated in Kenya in 2015 and we have been in the export of organic exotic fruits since 2015.
         We partner with thousands of enthusiastic small holder farmers, selected orchardists and wild collectors to bring you the acclaimed super fruits:
@@ -46,12 +46,12 @@ export default function Home() {
       background:"white",
       fontSize:14
     }} className="font-handlee p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <h4>Mission</h4>
+    <h4 className="text-lg">Mission</h4>
     <p>
     Sustainably grow and provide organic health food products with a promise for good nutrition and wealth creation.
         </p>
     </div>
-    <h4>Certifications' & Accreditations</h4>
+    <h4 className="text-xl">Certifications' & Accreditations</h4>
     <div style={{
       display:"flex",
       justifyContent:"center",
@@ -73,7 +73,7 @@ export default function Home() {
     <div style={{
           display:"flex",
           justifyContent:"center",
-          height:250
+          height:"50%"
         }} >
         <div>
         <Image 
@@ -91,7 +91,7 @@ export default function Home() {
         style={{
           padding:"15px 0",
           margin:"0 20px",
-          height:250
+          height:"50%"
         }}>
           <p>
           GLOBALG.A.P. offers more than 40 standards  and programs for 3 scopes: Crops, Livestock, and Aquaculture
@@ -114,11 +114,11 @@ export default function Home() {
     <div style={{
           display:"flex",
           justifyContent:"center",
-          height:250
+          height:"50%"
         }} >
         <div>
         <Image 
-            className="w-full h-auto"
+            className="w-full h-auto mt-16"
             width="0"
             height="0"
             sizes="100vw"
@@ -132,11 +132,11 @@ export default function Home() {
         style={{
           padding:"15px 0",
           margin:"0 20px",
-          height:250
+          height:"50%"
         }}>
           <p>
-          GLOBALG.A.P. offers more than 40 standards  and programs for 3 scopes: Crops, Livestock, and Aquaculture
-          localg.a.p. and GLOBALG.A.P.+ Add-on offer programs for developing customized solutions for our member
+          SMETA is the world's most widely used audit. 
+          Businesses use SMETA to understand and make improvements to working conditions and environmental performance in their business and supply chain.
           </p>
         </div>
   </div>
@@ -152,11 +152,11 @@ export default function Home() {
     <div style={{
           display:"flex",
           justifyContent:"center",
-          height:250
+          height:"50%"
         }} >
         <div>
         <Image 
-            className="w-full h-auto"
+            className="w-full h-auto mt-10"
             width="0"
             height="0"
             sizes="100vw"
@@ -170,11 +170,10 @@ export default function Home() {
         style={{
           padding:"15px 0",
           margin:"0 20px",
-          height:250
+          height:"50%"
         }}>
           <p>
-          GLOBALG.A.P. offers more than 40 standards  and programs for 3 scopes: Crops, Livestock, and Aquaculture
-          localg.a.p. and GLOBALG.A.P.+ Add-on offer programs for developing customized solutions for our member
+          Organic farming, agricultural system that uses ecologically based pest controls and biological fertilizers derived largely from animal.
           </p>
         </div>
   </div>

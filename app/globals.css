@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -19,7 +20,6 @@
 }
 
 body {
-  font-family: 'Handlee', cursive;
   background-color: #F8F8F8;
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -43,9 +43,3 @@ body {
   display: block;
   width: 100%;
 } */
-.partner-logos{
-  height: 120px;
-  width: 120px;
-  border: 1px solid black;
-  border-radius: 999px;
-}
