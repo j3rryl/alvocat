@@ -5,6 +5,9 @@ const nextConfig = {
       transform: '@mui/icons-material/{{member}}'
     }
   },
+  images: {
+    domains: ['images.unsplash.com','mavunobios.co.ke'],
+},
 }
 
 module.exports = nextConfig

@@ -39,7 +39,13 @@ body {
   background-size: cover;
 }
 
-.swiper-slide img {
+/* .swiper-slide .swiper-slide>img {
   display: block;
   width: 100%;
+} */
+.partner-logos{
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 999px;
 }
