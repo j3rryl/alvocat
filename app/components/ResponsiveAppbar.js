@@ -8,8 +8,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import AdbIcon from '@mui/icons-material/Adb';
 import { APP_NAME, PAGES_1, PAGES_2 } from '../utils/constants';
+import { useRouter } from 'next/navigation';
 
 function ResponsiveAppBar() {
+  const router = useRouter()
   return (
     <AppBar position="static" sx={{
       backgroundColor: "#63d471",
@@ -41,6 +43,9 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 sx={{ my: 2, color: 'white', display: 'block', textTransform:"capitalize" }}
+                onClick={()=>{
+                  router.push(`/${page}`)
+                }}
               >
                 {page}
               </Button>
@@ -51,6 +56,9 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 sx={{ my: 2, color: 'white', display: 'block', textTransform:"capitalize" }}
+                onClick={()=>{
+                  router.push(`/${page}`)
+                }}
               >
                 {page}
               </Button>
