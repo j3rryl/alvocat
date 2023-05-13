@@ -4,6 +4,7 @@ import ResponsiveAppBar from "./components/ResponsiveAppbar";
 import { APP_NAME } from "./utils/constants";
 import Image from "next/image";
 import { Footer } from "./components/Footer";
+import { Accordion } from "./components/Accordion";
 
 export default function Home() {
   const avocadoes = ["https://media.istockphoto.com/id/510015094/photo/avocado-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=DbZCos6mLkNoUisTazF-N8JVWs5jDrGkfcNT0XBHtkY=",
@@ -80,6 +81,21 @@ return (
     Sustainably grow and provide organic health food products with a promise for good nutrition and wealth creation.
         </p>
     </div>
+    <h4 className="text-xl">Our Partners</h4>
+    <div 
+    style={{
+      background:"white",
+      fontSize:14,
+      width:"100%",
+      height:"fit-content",
+      padding:"15px 15px",
+      margin:"30px 0"
+      
+    }}
+    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <Accordion/>
+    </div>
+
     <h4 className="text-xl">Certifications' & Accreditations</h4>
     <div style={{
       display:"flex",

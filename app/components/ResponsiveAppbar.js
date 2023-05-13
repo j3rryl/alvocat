@@ -46,6 +46,7 @@ function ResponsiveAppBar() {
                 onClick={()=>{
                   router.push(`/${page}`)
                 }}
+                className='!font-handlee'
               >
                 {page}
               </Button>
@@ -59,6 +60,7 @@ function ResponsiveAppBar() {
                 onClick={()=>{
                   router.push(`/${page}`)
                 }}
+                className='!font-handlee'
               >
                 {page}
               </Button>
