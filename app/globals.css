@@ -34,6 +34,7 @@ body {
 .swiper {
   width: 300px;
   height: 300px;
+  overflow-y: hidden;
 }
 
 .swiper-slide {
@@ -41,10 +42,11 @@ body {
   background-size: cover;
 }
 
-/* .swiper-slide .swiper-slide>img {
+.swiper-slide .swiper-slide>img {
   display: block;
   width: 100%;
-} */
+  overflow-y: hidden;
+}
 
 .alvocat{
   height: 600px;

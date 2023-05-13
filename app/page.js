@@ -5,7 +5,21 @@ import { APP_NAME } from "./utils/constants";
 import Image from "next/image";
 
 export default function Home() {
-  return (
+  const avocadoes = ["https://media.istockphoto.com/id/510015094/photo/avocado-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=DbZCos6mLkNoUisTazF-N8JVWs5jDrGkfcNT0XBHtkY=",
+"https://media.istockphoto.com/id/1359819435/photo/halves-of-fresh-avocado-on-a-cutting-board.jpg?b=1&s=170667a&w=0&k=20&c=VMrEYk9r0UT6pVSqWpRjkMdSSRg-KsDaKvh2c2n_G-Y=",
+"https://images.unsplash.com/photo-1601039641847-7857b994d704?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZvY2Fkb3xlbnwwfHwwfHw%3D&w=1000&q=80",
+"https://images.unsplash.com/photo-1449339854873-750e6913301b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXZhY2Fkb3xlbnwwfHwwfHw%3D&w=1000&q=800"]
+
+const pineapples = ["https://media.istockphoto.com/id/1371207687/photo/fresh-pineapple-fruit-on-yellow-background.jpg?b=1&s=170667a&w=0&k=20&c=hzWCbz7ggYTjJGYVh_5FgXzA0e3HpUbyAofHBndeszE=",
+"https://media.istockphoto.com/id/182716593/photo/fresh-slice-pineapple.jpg?b=1&s=170667a&w=0&k=20&c=YiDWyJuNeCvTvPoUmG42E9Mj4PPRqdPCMwVbHSVzcBw=",
+"https://images.unsplash.com/photo-1550828520-4cb496926fc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGluZWFwcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+"https://images.unsplash.com/opengraph/1x1.png?auto=format&fit=crop&w=1200&h=630&q=60&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1587883012610-e3df17d41270%3Fcrop%3Dfaces%252Cedges%26cs%3Dtinysrgb%26fit%3Dcrop%26fm%3Djpg%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8NXx8cGluZWFwcGxlfGVufDB8fHx8MTY4Mzg5NzU4NHww%26ixlib%3Drb-4.0.3%26q%3D60%26w%3D1200%26auto%3Dformat%26h%3D630%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fauto%253Dformat%2526fit%253Dcrop%2526w%253D750%2526h%253D84%2526q%253D60%2526txt-color%253D000000%2526txt-size%253D40%2526txt-align%253Dmiddle%25252Cleft%2526txt-pad%253D80%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526txt%253Dpineapple%26blend%3D000000"]
+
+const ginger = ["https://media.istockphoto.com/id/647402644/photo/ginger-root-and-ginger-powder-in-the-bowl.jpg?b=1&s=170667a&w=0&k=20&c=o_Itzs5y-0sLo_nQWijuao40qyRKk_56rqfb5xzjs_o=",
+"https://images.unsplash.com/photo-1635843104103-ddd88e1c5141?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGdpbmdlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
+"https://media.istockphoto.com/id/889176872/photo/fresh-ginger.jpg?b=1&s=170667a&w=0&k=20&c=4lcgzVsV76FhMFy8CCl6FwJNmRvuYchhoaPq2dzSJC0=",
+"https://media.istockphoto.com/id/1372776305/photo/curcuma-longa-turmeric-and-ginger-powder-rhizomes-and-tea.jpg?b=1&s=170667a&w=0&k=20&c=v8Y_QMEaHiUPDNKvv_pcx2_UObpKYFf3MRQxlccw1gw="]
+return (
     <>    
     <ResponsiveAppBar/>
         <div style={{
@@ -29,16 +43,16 @@ export default function Home() {
         to craft something new that enriches life.
         </p>
     </div>
-
+    <h4 className="text-2xl !font-handlee !mt-10">Our Products</h4>
     <div style={{
       display:"flex",
       justifyContent:"center",
       alignItems:"center",
       margin:"3rem 0"
     }}>
-      <CubeSwiper/>
-      <CubeSwiper/>
-      <CubeSwiper/>
+      <CubeSwiper imageUrls={avocadoes}/>
+      <CubeSwiper imageUrls={pineapples}/>
+      <CubeSwiper imageUrls={ginger}/>
     </div>
     <div style={{
       background:"white",

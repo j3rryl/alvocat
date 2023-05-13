@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, EffectCube, Pagination } from "swiper";
 
-export default function CubeSwiper() {
+export default function CubeSwiper({imageUrls}) {
   return (
     <>
       <Swiper
@@ -31,18 +31,14 @@ export default function CubeSwiper() {
         modules={[EffectCube, Pagination, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
+        {imageUrls?.map((item)=>{
+          return (
+          <SwiperSlide key={item}>
+          <img src={item}/>
+          </SwiperSlide>
+          )
+        })}
+
       </Swiper>
     </>
   );
