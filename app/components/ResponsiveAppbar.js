@@ -32,6 +32,7 @@ function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            className='!font-dancing'
           >
             {APP_NAME}
           </Typography>
