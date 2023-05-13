@@ -3,12 +3,15 @@ import CubeSwiper from "./components/CubeSwiper";
 import ResponsiveAppBar from "./components/ResponsiveAppbar";
 import { APP_NAME } from "./utils/constants";
 import Image from "next/image";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   const avocadoes = ["https://media.istockphoto.com/id/510015094/photo/avocado-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=DbZCos6mLkNoUisTazF-N8JVWs5jDrGkfcNT0XBHtkY=",
 "https://media.istockphoto.com/id/1359819435/photo/halves-of-fresh-avocado-on-a-cutting-board.jpg?b=1&s=170667a&w=0&k=20&c=VMrEYk9r0UT6pVSqWpRjkMdSSRg-KsDaKvh2c2n_G-Y=",
 "https://images.unsplash.com/photo-1601039641847-7857b994d704?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZvY2Fkb3xlbnwwfHwwfHw%3D&w=1000&q=80",
-"https://images.unsplash.com/photo-1449339854873-750e6913301b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXZhY2Fkb3xlbnwwfHwwfHw%3D&w=1000&q=800"]
+"https://images.unsplash.com/photo-1449339854873-750e6913301b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXZhY2Fkb3xlbnwwfHwwfHw%3D&w=1000&q=800",
+// "https://rare-gallery.com/uploads/posts/872484-Avocado-Colored-background-Water-splash.jpg"
+]
 
 const pineapples = ["https://media.istockphoto.com/id/1371207687/photo/fresh-pineapple-fruit-on-yellow-background.jpg?b=1&s=170667a&w=0&k=20&c=hzWCbz7ggYTjJGYVh_5FgXzA0e3HpUbyAofHBndeszE=",
 "https://media.istockphoto.com/id/182716593/photo/fresh-slice-pineapple.jpg?b=1&s=170667a&w=0&k=20&c=YiDWyJuNeCvTvPoUmG42E9Mj4PPRqdPCMwVbHSVzcBw=",
@@ -205,6 +208,8 @@ return (
   </div>
 
     </div>
+    <Footer/>
+
     </div>
     </>
   )
