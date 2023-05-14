@@ -54,7 +54,7 @@ return (
         to craft something new that enriches life.
         </p>
     </div>
-    <h4 className="text-2xl !font-handlee !mt-10">Our Products</h4>
+    <h4 className="text-2xl !font-handlee !mt-10 dark:text-white">Our Products</h4>
     <div style={{
       display:"flex",
       justifyContent:"center",
@@ -66,9 +66,8 @@ return (
       <CubeSwiper imageUrls={ginger}/>
     </div>
     <div style={{
-      background:"white",
       fontSize:14
-    }} className="font-handlee p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    }} className="font-handlee p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:text-white">
     <h4 className="text-lg">About Us</h4>
     <p>
     We are an agricultural company Incorporated in Kenya in 2015 and we have been in the export of organic exotic fruits since 2015.
@@ -80,18 +79,16 @@ return (
         </p>
     </div>
     <div style={{
-      background:"white",
       fontSize:14
-    }} className="font-handlee p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    }} className="font-handlee p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:text-white">
     <h4 className="text-lg">Mission</h4>
     <p>
     Sustainably grow and provide organic health food products with a promise for good nutrition and wealth creation.
         </p>
     </div>
-    <h4 className="text-xl">Our Partners</h4>
+    <h4 className="font-handlee text-xl dark:text-white">Our Partners</h4>
     <div 
     style={{
-      background:"white",
       fontSize:14,
       width:"100%",
       height:"fit-content",
@@ -99,13 +96,12 @@ return (
       margin:"30px 0"
       
     }}
-    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:text-white">
     <Accordion/>
     </div>
 
     <div 
     style={{
-      background:"white",
       fontSize:14,
       width:"100%",
       height:"fit-content",
@@ -123,7 +119,6 @@ return (
         </div>
         <div 
     style={{
-      background:"white",
       fontSize:14,
       width:"50%",
       height:"fit-content",
@@ -133,9 +128,8 @@ return (
       left:0,
       right:0,
       position:"absolute"
-      
     }}
-    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:text-white">
       <ContactForm/>
     </div>
       </div>
@@ -147,57 +141,60 @@ return (
         marginTop:"210px",
         marginBottom:"60px"
       }} 
-      className="h-2/3">
+      className="h-2/3 dark:text-gray-400">
         <div className="w-full px-5">
           <div style={{
           textAlign:"center",
           height:50, 
           borderRadius:"10px",
-          background:"#F3F4F6",
           width:"fit-content",
           margin:"5px auto",
           padding:"10px 20px"
-          }}>
+          }}
+          className="bg-gray-200 dark:bg-gray-600"
+          >
           <MailOutlineOutlined/>
           </div>
           <h5 className="text-lg text-center font-black mt-4">Email Us:</h5>
             <p>Email us for general queries, including marketing and partnership opportunities.</p>
-            <Link href="alvocat@gmail.com" className="!text-blue-950 font-black">alvocat@gmail.com</Link>
+            <Link href="alvocat@gmail.com" className="text-blue-950 dark:text-white font-black">alvocat@gmail.com</Link>
           </div>
           <div className="w-full px-5">
           <div style={{textAlign:"center",
           height:50,
           borderRadius:"10px",
-          background:"#F3F4F6",
           width:"fit-content",
           margin:"5px auto",
           padding:"10px 20px"
-          }}>
+          }}
+          className="bg-gray-200 dark:bg-gray-600"
+          >
             <CallOutlined/>
             </div>
             <h5 className="text-lg text-center font-black mt-4">Call Us:</h5>
             <p>Call us to speak to a member of our team. We are always happy to help.</p>
-            <Link href="+254 723 457 623" className="!text-blue-950 font-black">+254 723 457 623</Link>
+            <Link href="+254 723 457 623" className="text-blue-950 dark:text-white font-black">+254 723 457 623</Link>
           </div>
           <div className="w-full px-5">
           <div style={{textAlign:"center",
           height:50,
           borderRadius:"10px",
-          background:"#F3F4F6",
           width:"fit-content",
           margin:"5px auto",
           padding:"10px 20px"
-          }}>
+          }}
+          className="bg-gray-200 dark:bg-gray-600"
+          >
             <SupportOutlined />
             </div>
             <h5 className="text-lg text-center font-black mt-4">Support:</h5>
             <p>Email us for general queries, including marketing and partnership opportunities.</p>
-            <Link href="alvocatsupport@gmail.com" className="!text-blue-950 font-black">alvocat@gmail.com</Link>
+            <Link href="alvocatsupport@gmail.com" className="text-blue-950 dark:text-white font-black">alvocat@gmail.com</Link>
           </div>
       </div>
     </div>
 
-    <h4 className="text-xl">Certifications' & Accreditations</h4>
+    <h4 className="text-xl dark:text-white !font-handlee">Certifications' & Accreditations</h4>
     <div style={{
       display:"flex",
       justifyContent:"center",
@@ -207,7 +204,6 @@ return (
     }}>
     <div 
     style={{
-      background:"white",
       fontSize:14,
       width:"40%",
       height:500,
@@ -215,7 +211,7 @@ return (
       display:"flex",
       flexDirection:"column"
     }}
-    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:text-white">
     <div style={{
           display:"flex",
           justifyContent:"center",
@@ -248,7 +244,6 @@ return (
     
   <div 
     style={{
-      background:"white",
       fontSize:14,
       width:"40%",
       height:500,
@@ -256,7 +251,7 @@ return (
       display:"flex",
       flexDirection:"column"
     }}
-    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:text-white">
     <div style={{
           display:"flex",
           justifyContent:"center",
@@ -289,12 +284,11 @@ return (
 
   <div 
     style={{
-      background:"white",
       fontSize:14,
       width:"40%",
       height:500,
     }}
-    className="font-handlee bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    className="font-handlee bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:text-white">
     <div style={{
           display:"flex",
           justifyContent:"center",
