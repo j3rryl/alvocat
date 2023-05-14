@@ -160,6 +160,7 @@ return (
           }}>
           <MailOutlineOutlined/>
           </div>
+          <h5 className="text-lg text-center font-black mt-4">Email Us:</h5>
             <p>Email us for general queries, including marketing and partnership opportunities.</p>
             <Link href="alvocat@gmail.com" className="!text-blue-950 font-black">alvocat@gmail.com</Link>
           </div>
@@ -174,6 +175,7 @@ return (
           }}>
             <CallOutlined/>
             </div>
+            <h5 className="text-lg text-center font-black mt-4">Call Us:</h5>
             <p>Call us to speak to a member of our team. We are always happy to help.</p>
             <Link href="+254 723 457 623" className="!text-blue-950 font-black">+254 723 457 623</Link>
           </div>
@@ -188,6 +190,7 @@ return (
           }}>
             <SupportOutlined />
             </div>
+            <h5 className="text-lg text-center font-black mt-4">Support:</h5>
             <p>Email us for general queries, including marketing and partnership opportunities.</p>
             <Link href="alvocatsupport@gmail.com" className="!text-blue-950 font-black">alvocat@gmail.com</Link>
           </div>
