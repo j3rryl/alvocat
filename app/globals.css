@@ -57,8 +57,23 @@ body {
   background-repeat: no-repeat;
   position: relative;
   background-position: center;
-  background-size: cover;
+  background-size:contain;
   min-height: 100%;
   position: relative;
-  background-image: url("https://png.pngtree.com/background/20230426/original/pngtree-an-avocado-is-cut-in-half-on-top-of-a-dark-picture-image_2487063.jpg");
+  background-image: url("https://media.istockphoto.com/id/510015094/photo/avocado-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=DbZCos6mLkNoUisTazF-N8JVWs5jDrGkfcNT0XBHtkY=");
+}
+
+.contact-bg{
+  height: 600px;
+  width: 100%;
+  color: white;
+  /* filter: grayscale(100%); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  background-size:cover;
+  min-height: 100%;
+  position: relative;
+  background-image: url("https://media.istockphoto.com/id/1411928829/photo/social-media-technology-concept-men-are-using-computer-for-social-media-and-online-marketing.jpg?b=1&s=170667a&w=0&k=20&c=KcUh0s26MmMesJGtOxJBaxw7n7L_NqYhIB8_-OV6P5M=");
 }

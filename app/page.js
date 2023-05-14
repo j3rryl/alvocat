@@ -1,15 +1,21 @@
-import Link from "next/link";
+"use client";
 import CubeSwiper from "./components/CubeSwiper";
 import ResponsiveAppBar from "./components/ResponsiveAppbar";
 import { APP_NAME } from "./utils/constants";
 import Image from "next/image";
 import { Footer } from "./components/Footer";
 import { Accordion } from "./components/Accordion";
+import { ContactForm } from "./components/ContactForm";
+import Stack from '@mui/material/Stack';
+import { CallOutlined, MailOutlineOutlined, SupportOutlined } from "@mui/icons-material";
+import Link from "next/link";
+
 
 export default function Home() {
   const avocadoes = ["https://media.istockphoto.com/id/510015094/photo/avocado-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=DbZCos6mLkNoUisTazF-N8JVWs5jDrGkfcNT0XBHtkY=",
 "https://media.istockphoto.com/id/1359819435/photo/halves-of-fresh-avocado-on-a-cutting-board.jpg?b=1&s=170667a&w=0&k=20&c=VMrEYk9r0UT6pVSqWpRjkMdSSRg-KsDaKvh2c2n_G-Y=",
 "https://images.unsplash.com/photo-1601039641847-7857b994d704?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZvY2Fkb3xlbnwwfHwwfHw%3D&w=1000&q=80",
+// "https://png.pngtree.com/background/20230426/original/pngtree-an-avocado-is-cut-in-half-on-top-of-a-dark-picture-image_2487063.jpg",
 "https://images.unsplash.com/photo-1449339854873-750e6913301b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXZhY2Fkb3xlbnwwfHwwfHw%3D&w=1000&q=800",
 // "https://rare-gallery.com/uploads/posts/872484-Avocado-Colored-background-Water-splash.jpg"
 ]
@@ -31,17 +37,18 @@ return (
     }}>
       <div style={{
       fontSize:18,
-      fontWeight:"bolder"
-    }} className="alvocat font-handlee p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <h1 className="text-center my-1 !font-dancing text-3xl" style={{
+      fontWeight:"bolder",
+      color:"black"
+    }} className="alvocat p-6 my-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <h1 className="text-center my-1 text-3xl" style={{
       letterSpacing:"1rem",
       fontWeight:"bolder",
       fontSize:25,
     }}>{APP_NAME}</h1>
     <p>
-    We are an agricultural company Incorporated in Kenya in 2015 and we have been in the export of organic exotic fruits since 2015.
-        We partner with thousands of enthusiastic small holder farmers, selected orchardists and wild collectors to bring you the acclaimed super fruits:
-        the avocado, passion fruit, mango, and the king of fruits the baobab.
+    We are an agricultural company and we have been in the export of organic exotic fruits.
+        We partner with Europe, Middle East and thousands of enthusiastic small holder farmers, selected orchardists and wild collectors to bring you the acclaimed super fruits:
+        the avocado, pineapples and ginger.
         With an endowed sunny climate all year round, rich volcanic soils combined with a dedicated and competent personnel with a delicate keenness
         towards food safety assurance and quality we are delighted to fulfill your need for a natural, nutritious products that also promotes health and wellbeing. This is what excites us every day and makes us wonder in the wild
         to craft something new that enriches life.
@@ -94,6 +101,97 @@ return (
     }}
     className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <Accordion/>
+    </div>
+
+    <div 
+    style={{
+      background:"white",
+      fontSize:14,
+      width:"100%",
+      height:"fit-content",
+      margin:"30px 0",
+      display:"flex",
+      flexDirection:"column"
+      
+    }}
+    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
+      <div className="contact-bg mx-auto">
+        <div className="mt-32 text-center text-lg w-1/2 mx-auto">
+        <h1 className="text-xl font-black">Contact Us</h1>
+        <p>We use an agile approach to test assumptions and connect with the needs of your audience early and often.
+        </p>
+        </div>
+        <div 
+    style={{
+      background:"white",
+      fontSize:14,
+      width:"50%",
+      height:"fit-content",
+      padding:"15px 15px",
+      margin:"0 auto",
+      marginTop:"60px",
+      left:0,
+      right:0,
+      position:"absolute"
+      
+    }}
+    className="font-handlee bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <ContactForm/>
+    </div>
+      </div>
+      <div style={{
+        display:"flex",
+        justifyContent:"space-evenly",
+        alignItems:"center",
+        margin:"0",
+        marginTop:"210px",
+        marginBottom:"60px"
+      }} 
+      className="h-2/3">
+        <div className="w-full px-5">
+          <div style={{
+          textAlign:"center",
+          height:50, 
+          borderRadius:"10px",
+          background:"#F3F4F6",
+          width:"fit-content",
+          margin:"5px auto",
+          padding:"10px 20px"
+          }}>
+          <MailOutlineOutlined/>
+          </div>
+            <p>Email us for general queries, including marketing and partnership opportunities.</p>
+            <Link href="alvocat@gmail.com" className="!text-blue-950 font-black">alvocat@gmail.com</Link>
+          </div>
+          <div className="w-full px-5">
+          <div style={{textAlign:"center",
+          height:50,
+          borderRadius:"10px",
+          background:"#F3F4F6",
+          width:"fit-content",
+          margin:"5px auto",
+          padding:"10px 20px"
+          }}>
+            <CallOutlined/>
+            </div>
+            <p>Call us to speak to a member of our team. We are always happy to help.</p>
+            <Link href="+254 723 457 623" className="!text-blue-950 font-black">+254 723 457 623</Link>
+          </div>
+          <div className="w-full px-5">
+          <div style={{textAlign:"center",
+          height:50,
+          borderRadius:"10px",
+          background:"#F3F4F6",
+          width:"fit-content",
+          margin:"5px auto",
+          padding:"10px 20px"
+          }}>
+            <SupportOutlined />
+            </div>
+            <p>Email us for general queries, including marketing and partnership opportunities.</p>
+            <Link href="alvocatsupport@gmail.com" className="!text-blue-950 font-black">alvocat@gmail.com</Link>
+          </div>
+      </div>
     </div>
 
     <h4 className="text-xl">Certifications' & Accreditations</h4>
