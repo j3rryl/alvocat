@@ -9,9 +9,34 @@ import Tooltip from '@mui/material/Tooltip';
 import AdbIcon from '@mui/icons-material/Adb';
 import { APP_NAME, PAGES_1, PAGES_2 } from '../utils/constants';
 import { useRouter } from 'next/navigation';
+import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
+import { useEffect, useState } from 'react';
 
 function ResponsiveAppBar() {
-  const router = useRouter()
+  const router = useRouter();
+  const [darkMode, setDarkMode] = useState(true);
+  useEffect(()=>{
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+      console.log("on");
+    } else {
+      console.log("off");
+      document.documentElement.classList.remove('dark')
+      document.documentElement.classList.add("light")
+    }
+  },[darkMode])
+  const changeTheme = ()=>{
+    setDarkMode(!darkMode)
+// Whenever the user explicitly chooses light mode
+darkMode?localStorage.theme = 'dark':localStorage.theme = 'light'
+
+// Whenever the user explicitly chooses dark mode
+
+// Whenever the user explicitly chooses to respect the OS preference
+// localStorage.removeItem('theme')
+  }
+
   return (
     <AppBar position="static" sx={{
       backgroundColor: "#63d471",
@@ -65,6 +90,9 @@ function ResponsiveAppBar() {
                 {page}
               </Button>
             ))}
+            <Button sx={{ justifyContent:"center", display:"flex", alignItems:"center", textAlign:"center" }} onClick={()=>changeTheme()}>
+              {darkMode?<DarkModeOutlined/>:<LightModeOutlined/>}
+            </Button>
           </Box>         
         </Toolbar>
       </Container>
