@@ -192,7 +192,7 @@ return (
       </div>
     </div>
 
-    <h4 className="text-xl dark:text-white !font-handlee">Certifications' & Accreditations</h4>
+    <h4 className="text-xl dark:text-white !font-handlee">Certifications & Accreditations</h4>
     <div style={{
       display:"flex",
       justifyContent:"center",
@@ -274,7 +274,7 @@ return (
           height:"50%"
         }}>
           <p>
-          SMETA is the world's most widely used audit. 
+          SMETA is the worlds most widely used audit. 
           Businesses use SMETA to understand and make improvements to working conditions and environmental performance in their business and supply chain.
           </p>
         </div>

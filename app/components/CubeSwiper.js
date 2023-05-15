@@ -9,7 +9,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, EffectCube, Pagination } from "swiper";
-import Image from "next/image";
 
 export default function CubeSwiper({imageUrls}) {
   return (
@@ -35,7 +34,7 @@ export default function CubeSwiper({imageUrls}) {
         {imageUrls?.map((item)=>{
           return (
           <SwiperSlide key={item}>
-          <Image src={item}/>
+          <img src={item}/>
           </SwiperSlide>
           )
         })}
