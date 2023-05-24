@@ -34,7 +34,8 @@ return (
     <ResponsiveAppBar/>
         <div style={{
       margin:"10px 3rem",
-    }}>
+    }} 
+    className="">
       <div style={{
       fontSize:18,
       fontWeight:"bolder",
@@ -43,15 +44,14 @@ return (
       <h1 className="text-center my-1 text-3xl" style={{
       letterSpacing:"1rem",
       fontWeight:"bolder",
-      fontSize:25,
+      fontSize:36,
     }}>{APP_NAME}</h1>
     <p>
     We are an agricultural company and we have been in the export of organic exotic fruits.
-        We partner with Europe, Middle East and thousands of enthusiastic small holder farmers, selected orchardists and wild collectors to bring you the acclaimed super fruits:
+        We partner with Europe, Middle East markets and thousands of enthusiastic small holder farmers to bring you the acclaimed super fruits:
         the avocado, pineapples and ginger.
         With an endowed sunny climate all year round, rich volcanic soils combined with a dedicated and competent personnel with a delicate keenness
-        towards food safety assurance and quality we are delighted to fulfill your need for a natural, nutritious products that also promotes health and wellbeing. This is what excites us every day and makes us wonder in the wild
-        to craft something new that enriches life.
+        towards food safety assurance and quality we are delighted to fulfill your need for a natural, nutritious products that also promotes health and wellbeing. This is what excites us every day.
         </p>
     </div>
     <h4 className="text-2xl !font-handlee !mt-10 dark:text-white">Our Products</h4>
@@ -71,9 +71,9 @@ return (
     <h4 className="text-lg">About Us</h4>
     <p>
     We are an agricultural company and we have been in the export of organic exotic fruits. 
-    We partner with Europe, Middle East and thousands of enthusiastic small holder farmers, selected orchardists and wild collectors to bring you the acclaimed super fruits: the avocado, pineapples and ginger. 
+    We partner with Europe, Middle East markets and thousands of enthusiastic small holder farmers to bring you the acclaimed super fruits: the avocado, pineapples and ginger. 
     With an endowed sunny climate all year round, rich volcanic soils combined with a dedicated and competent personnel with a delicate keenness towards food safety assurance and quality we are delighted to fulfill your need for a natural, nutritious products that also promotes health and wellbeing. 
-    This is what excites us every day and makes us wonder in the wild to craft something new that enriches life.
+    This is what excites us every day.
         </p>
     </div>
     <div style={{
@@ -112,8 +112,6 @@ return (
       <div className="contact-bg mx-auto">
         <div className="mt-32 text-center text-lg w-1/2 mx-auto">
         <h1 className="text-xl font-black">Contact Us</h1>
-        <p>We use an agile approach to test assumptions and connect with the needs of your audience early and often.
-        </p>
         </div>
         <div 
     style={{
@@ -133,8 +131,8 @@ return (
       </div>
       <div style={{
         display:"flex",
-        justifyContent:"space-evenly",
-        alignItems:"center",
+        // justifyContent:"space-evenly",
+        // alignItems:"center",
         margin:"0",
         marginTop:"210px",
         marginBottom:"60px"
@@ -142,7 +140,6 @@ return (
       className="h-2/3 dark:text-gray-400">
         <div className="w-full px-5">
           <div style={{
-          textAlign:"center",
           height:50, 
           borderRadius:"10px",
           width:"fit-content",
@@ -155,10 +152,10 @@ return (
           </div>
           <h5 className="text-lg text-center font-black mt-4">Email Us:</h5>
             <p>Email us for general queries, including marketing and partnership opportunities.</p>
-            <Link href="alvocat@gmail.com" className="text-blue-950 dark:text-white font-black">alvocat@gmail.com</Link>
+            <Link href="alvocatenquiries@gmail.com" className="text-blue-950 dark:text-white font-black">alvocatenquiries@gmail.com</Link>
           </div>
           <div className="w-full px-5">
-          <div style={{textAlign:"center",
+          <div style={{
           height:50,
           borderRadius:"10px",
           width:"fit-content",
@@ -173,7 +170,7 @@ return (
             <p>Call us to speak to a member of our team. We are always happy to help.</p>
             <Link href="+254 723 457 623" className="text-blue-950 dark:text-white font-black">+254 723 457 623</Link>
           </div>
-          <div className="w-full px-5">
+          {/* <div className="w-full px-5">
           <div style={{textAlign:"center",
           height:50,
           borderRadius:"10px",
@@ -188,7 +185,7 @@ return (
             <h5 className="text-lg text-center font-black mt-4">Support:</h5>
             <p>Email us for general queries, including marketing and partnership opportunities.</p>
             <Link href="alvocatsupport@gmail.com" className="text-blue-950 dark:text-white font-black">alvocat@gmail.com</Link>
-          </div>
+          </div> */}
       </div>
     </div>
 
